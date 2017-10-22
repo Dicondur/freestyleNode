@@ -224,13 +224,16 @@ function nine(){
 
 // console.log(__dirname);
 // console.log(__filename);
-// 
+
+// Example statuc serve
 var http = require('http');
 var fs = require('fs');
 
 http.createServer(onRequest).listen(8888);
 console.log("Server runing on port 8888");
 
+
+//Request handler
 function onRequest(request, response){
     console.log("A request was made"+request.url);
     // response.writeHead(200,{"Context-Type":"text/plain"});
@@ -258,4 +261,11 @@ function send404(response){
 
 
 }
- nine();
+//  nine();
+
+
+function ten(){
+    var connect = require('connect');
+}
+
+
